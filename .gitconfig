@@ -1,0 +1,11 @@
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
+[user]
+	name = John Hampton
+	email = john@topagentnetwork.com
+[credential]
+	helper = osxkeychain
+[push]
+	default = simple
