@@ -13,3 +13,8 @@
 	enabled = true
 [github]
 	user = johnhampton
+[alias]
+	lg-e = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+        lg = !sh -c 'git --no-pager lg-e --color "$@" | emojify | less -RXF' -
+	ls-e = log --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+        ls = !sh -c 'git --no-pager ls-e --color "$@" | emojify | less -RXF' -
