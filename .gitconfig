@@ -20,3 +20,5 @@
         ls = !sh -c 'git --no-pager ls-e --color "$@" | emojify | less -RXF' -
 [color]
 	ui = auto
+[hub]
+	protocol = https
